@@ -1,0 +1,126 @@
+/* TITULOS */
+.sub {
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* GRID GENERAL */
+.tecnologias-grid {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTENEDOR GRID */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  width: 90%;
+}
+
+/* ITEM */
+.grid-item {
+  background-color: #19191B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: 2px solid #2a2a2a;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  min-width: 0;
+}
+
+/* HOVER PRO */
+.grid-item:hover {
+  background-color: #28282B;
+  border-color: #FFF703;
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* ICONO */
+.grid-item img {
+  width: 42px;
+  height: auto;
+}
+
+/* TEXTO */
+.grid-item p {
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  white-space: nowrap;   /* ← mantiene en una línea */
+  overflow: hidden;      /* ← corta el desborde */
+  text-overflow: ellipsis; /* ← muestra "..." si no entra */
+  min-width: 0; 
+}
+
+/* ===== HERRAMIENTAS ===== */
+
+.herramientas-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.herramientas-contain {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 40%; 
+}
+
+
+
+
+/* ITEM HERRAMIENTA */
+.h-item {
+  background-color: #19191B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: 2px solid #2a2a2a;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 0;
+}
+
+/* HOVER */
+.h-item:hover {
+  background-color: #28282B;
+  border-color: #FFF703;
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.h-item img {
+  width: 42px;
+}
+
+.h-item p {
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .herramientas-contain {
+    width: 90%;
+    flex-direction: row;
+  }
+}

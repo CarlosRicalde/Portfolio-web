@@ -1,0 +1,159 @@
+.sobremi-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5%;
+}
+
+/* TEXTO */
+.sobremi {
+  max-width: 600px;
+}
+
+.sobremi .name {
+  font-size: 54px;
+  font-weight: bold;
+}
+
+/* TRABAJO (animado después) */
+.work {
+  color: #FFF703;
+  font-size: 30px;
+  display: inline-block;
+}
+
+/* CURSOR */
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 30px;
+  background-color: #FFF703;
+  margin-left: 5px;
+  animation: parpadeo 0.7s infinite;
+  vertical-align: middle;
+}
+
+@keyframes parpadeo {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* DESCRIPCIÓN */
+.present {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* FOTO */
+.foto-yo {
+  max-width: 350px;
+}
+
+.foto-yo img {
+  width: 100%;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+}
+
+.foto-yo img:hover {
+  transform: scale(1.05);
+}
+
+/* BOTONES / REDES */
+.cuentas {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cuentas .cv {
+  background-color: #FFF703;
+  color: #000;
+  border-radius: 15px;
+  padding: 8px 18px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cuentas .cv:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.linkedin,
+.github {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 52px;
+}
+
+.github {
+    width: 62px;
+    margin-left: 0;
+}
+
+.linkedin:hover,
+.github:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+
+/* LINEA */
+.space-line {
+  border: none;
+  border-top: 1px solid #FFF703;
+  width: 60%;
+  margin: 80px auto;
+}
+
+
+@media (max-width: 768px) {
+  
+  .foto-yo {
+    margin: 0;
+    margin-top: 20px;
+    width: 60%;
+  }
+
+  .foto-yo img {
+    width: 100%;
+  }
+
+  
+  .sobremi-container {
+    flex-direction: column-reverse;       /* 🔥 pasa a vertical */
+    align-items: center;
+    text-align: center;
+  }
+
+  .sobremi {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .name {
+    font-size: 32px;
+  }
+
+  .work {
+    font-size: 28px;
+  }
+
+  .present {
+    padding: 0;
+    font-size: 18px;
+  }
+
+
+
+  .cuentas {
+    justify-content: center;
+    flex-wrap: wrap;   /* 🔥 por si no entran */
+  }
+}

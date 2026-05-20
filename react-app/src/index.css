@@ -1,0 +1,14 @@
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONDO GLOBAL */
+body {
+  background-color: #020617; /* negro azulado tipo moderno */
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  overflow-x: hidden;
+}
