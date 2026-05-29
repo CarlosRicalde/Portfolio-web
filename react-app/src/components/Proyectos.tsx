@@ -1,5 +1,37 @@
 import { useState } from "react";
 import "./Proyectos.css";
+import paginaInicio from "../assets/PAGINA_INICIO.png";
+import paginaLogin from "../assets/PAGINA_LOGIN.png";
+import paginaResumen from "../assets/PAGINA_RESUMEN.png";
+import paginaEquipos from "../assets/PAGINA_EQUIPOS.png";
+import paginaJugadores from "../assets/PAGINA_JUGADORES.png";
+import paginaDelegados from "../assets/PAGINA_DELEGADOS.png";
+import paginaTorneos from "../assets/PAGINA_TORNEOS.png";
+import paginaTemporadas from "../assets/PAGINA_TEMPORADAS.png";
+import paginaUsuarioTorneos from "../assets/PAGINA_USUARIO_TORNEOS.png";
+import paginaTraspasos from "../assets/PAGINA_TRASPASOS.png";
+import paginaTorneos2 from "../assets/PAGINA_TORNEOS.png";
+import paginaFechas from "../assets/PAGINA_FECHAS.png";
+import paginaPlantel from "../assets/PAGINA_PLANTEL.png";
+import paginaZonas from "../assets/PAGINA_ZONAS.png";
+import htmlIcon from "../assets/icons8-html5-48.png";
+import css3Icon from "../assets/icons8-css3-48.png";
+import jsIcon from "../assets/icons8-javascript-48.png";
+import bootstrapIcon from "../assets/icons8-oreja-48.png";
+import reactIcon from "../assets/icons8-reaccionar-100.png";
+import pythonIcon from "../assets/icons8-python-48.png";
+import djangoIcon from "../assets/icons8-django-a-high-level-python-web-framework-that-encourages-rapid-development-24.png";
+import mysqlIcon from "../assets/icons8-mysql-48.png";
+import firebaseIcon from "../assets/icons8-firebase-48.png";
+import gitIcon from "../assets/icons8-git-48.png";
+import githubIcon from "../assets/icons8-github-100.png";
+import agregarJugador from "../assets/appmovil_agregarJugador.jpeg";
+import editarYEliminarJugador from "../assets/appmovil_editarYEliminarJugador.jpeg";
+import listaJugadores from "../assets/appmovil_listaJugadores.jpeg";
+import inicioSesion from "../assets/appmovil_inicioSesion.jpeg";
+import nodeIcon from "../assets/icons8-nodo-js-48.png";
+import logoPawify from "../assets/logo_pawify.png";
+import pawify from "../assets/pawify.png";
 
 const Proyectos = () => {
   const proyectos = [
@@ -8,30 +40,34 @@ const Proyectos = () => {
       descripcion:
         "Aplicación web para la gestión integral de torneos de fútbol, con interfaces para Administrador y Usuario. Permite la creación de torneos, temporadas y partidos, así como el registro de equipos, jugadores y entrenadores. Se conecta a una base de datos MySQL para el almacenamiento y gestión de la información. Fue desarrollada junto a un equipo de trabajo utilizando la metodología Scrum. En este trabajo, desarrollé e implementé la mayor parte de la lógica back-end, el diseño y la gestión de la base de datos.",
       imagenes: [
-        "/images/PAGINA_INICIO.png",
-        "/images/PAGINA_LOGIN.png",
-        "/images/PAGINA_RESUMEN.png",
-        "/images/PAGINA_EQUIPOS.png",
-        "/images/PAGINA_JUGADORES.png",
-        "/images/PAGINA_DELEGADOS.png",
-        "/images/PAGINA_TORNEOS.png",
-        "/images/PAGINA_TEMPORADAS.png",
-        "/images/PAGINA_USUARIO_TORNEOS.png",
-        "/images/PAGINA_TRASPASOS.png",
-        "/images/PAGINA_TORNEOS.png",
-        "/images/PAGINA_FECHAS.png",
-        "/images/PAGINA_PLANTEL.png",
-        "/images/PAGINA_ZONAS.png",
+        paginaInicio,
+        paginaLogin,
+        paginaResumen,
+        paginaEquipos,
+        paginaJugadores,
+        paginaDelegados,
+        paginaTorneos,
+        paginaTemporadas,
+        paginaUsuarioTorneos,
+        paginaTraspasos,
+        paginaTorneos2,
+        paginaFechas,
+        paginaPlantel,
+        paginaZonas,
       ],
       github: "https://github.com/CarlosRicalde/Liga-de-Estrellas-App-web",
       botonLabel: "Github",
-      botonImg: "images/icons8-github-100.png",
+      botonImg: githubIcon,
       tecnologias: [
-        "/images/icons8-mysql-48.png",
-        "/images/icons8-python-48.png",
-        "/images/django.png",
-        "/images/icons8-html5-48.png",
-        "/images/icons8-css3-48.png",
+        mysqlIcon,
+        pythonIcon,
+        djangoIcon,
+        htmlIcon,
+        css3Icon,
+        jsIcon,
+        bootstrapIcon,
+        reactIcon,
+        gitIcon,
       ],
     },
     {
@@ -39,36 +75,25 @@ const Proyectos = () => {
       descripcion:
         "Esta aplicación es simple y es únicamente para la gestión de personas, en este caso jugadores de fútbol, permitiendo registrar perfiles, editarlos y eliminarlos. Aunque es un proyecto más pequeño en comparación con la aplicación web principal, esta aplicación móvil demuestra mi capacidad para desarrollar soluciones prácticas y funcionales en entornos móviles.",
       imagenes: [
-        "/images/appmovil_inicioSesion.jpeg",
-        "/images/appmovil_listaJugadores.jpeg",
-        "/images/appmovil_agregarJugador.jpeg",
-        "/images/appmovil_editarYEliminarJugador.jpeg",
+        inicioSesion,
+        listaJugadores,
+        agregarJugador,
+        editarYEliminarJugador,
       ],
       github: "https://github.com/M4rde21/Proyecto_movil",
       botonLabel: "Github",
-      botonImg: "images/icons8-github-100.png",
-      tecnologias: [
-        "/images/icons8-firebase-48.png",
-        "/images/icons8-javascript-48.png",
-        "/images/icons8-reaccionar-100.png",
-        "/images/icons8-git-48.png",
-        "/images/icons8-nodo-js-48.png",
-      ],
+      botonImg: githubIcon,
+      tecnologias: [firebaseIcon, jsIcon, reactIcon, gitIcon, nodeIcon],
     },
     {
       titulo: "Pawify",
       descripcion:
         "Aplicacion web orientada a la adopcion de mascotas, cuenta con perfiles de usuarios y administradores, permitiendo registrar mascotas con sus respectivos datos e información, almacenados en una base de datos MySQL. Además, integra servicios de veterinaria, adiestramiento y gestión de animales perdidos. En este proyecto desarrollé parte de la logica back-end y aprendí mucho a trabajar en equipo.",
-      imagenes: ["images/pawify.png"],
+      imagenes: [pawify],
       github: "https://www.pawify.dev/",
       botonLabel: "Sitio web",
-      botonImg: "images/logo_pawify.png",
-      tecnologias: [
-        "/images/icons8-mysql-48.png",
-        "/images/icons8-python-48.png",
-        "/images/django.png",
-        "/images/icons8-reaccionar-100.png",
-      ],
+      botonImg: logoPawify,
+      tecnologias: [mysqlIcon, pythonIcon, djangoIcon, reactIcon, gitIcon],
     },
   ];
 

@@ -1,8 +1,11 @@
 import "./SobreMi.css";
 import { useEffect, useState } from "react";
+import paraPortfolio3Photoroom from "../assets/paraPortfolio3-Photoroom.jpg";
+import linkedinIcon from "../assets/icons8-linkedin-48.png";
+import githubIcon from "../assets/icons8-github-100.png";
 
 const SobreMi = () => {
-  const texto = "Desarrollador Full Stack ";
+  const texto = "Desarrollador Back-end ";
 
   const [textoActual, setTextoActual] = useState("");
   const [subIndex, setSubIndex] = useState(0);
@@ -42,13 +45,12 @@ const SobreMi = () => {
         </h2>
 
         <p className="present">
-          Hola!👋Apasionado por transformar ideas en soluciones tecnológicas.
-          Combino una sólida base como analista de sistemas con habilidades de
-          desarrollo full-stack para crear aplicaciones web robustas y
-          eficientes. Tengo experiencia trabajando con la metodología Scrum,
-          disfruto del trabajo en equipo con una comunicación fluida. Me
-          entusiasma aplicar mis conocimientos e ideas en su equipo de trabajo,
-          a la vez que sigo aprendiendo y creciendo.
+          Hola 👋 Soy Técnico en Análisis de Sistemas, orientado principalmente
+          al desarrollo Back-end y apasionado por transformar ideas en
+          soluciones tecnológicas. Trabajé bajo metodología Scrum, destacándome
+          por el trabajo en equipo y la comunicación fluida. Me entusiasma
+          seguir aprendiendo, creciendo profesionalmente y aportar mis
+          conocimientos e ideas en nuevos desafíos.
         </p>
 
         <div className="cuentas">
@@ -60,17 +62,17 @@ const SobreMi = () => {
             href="https://www.linkedin.com/in/carlos-daniel-ricalde-378442338/"
             target="_blank"
           >
-            <img className="linkedin" src="/images/icons8-linkedin-48.png" />
+            <img className="linkedin" src={linkedinIcon} />
           </a>
 
           <a href="https://github.com/CarlosRicalde" target="_blank">
-            <img className="github" src="/images/icons8-github-100.png" />
+            <img className="github" src={githubIcon} />
           </a>
         </div>
       </div>
 
       <div className="foto-yo">
-        <img src="/images/paraPortfolio3-Photoroom.jpg" alt="" />
+        <img src={paraPortfolio3Photoroom} alt="" />
       </div>
     </div>
   );

@@ -1,24 +1,36 @@
 import "./Tecnologias.css";
+import htmlIcon from "../assets/icons8-html5-48.png";
+import css3Icon from "../assets/icons8-css3-48.png";
+import jsIcon from "../assets/icons8-javascript-48.png";
+import bootstrapIcon from "../assets/icons8-oreja-48.png";
+import reactIcon from "../assets/icons8-reaccionar-100.png";
+import pythonIcon from "../assets/icons8-python-48.png";
+import djangoIcon from "../assets/icons8-django-a-high-level-python-web-framework-that-encourages-rapid-development-24.png";
+import mysqlIcon from "../assets/icons8-mysql-48.png";
+import typescriptIcon from "../assets/icons8-mecanografiado-48.png";
+import firebaseIcon from "../assets/icons8-firebase-48.png";
+import gitIcon from "../assets/icons8-git-48.png";
+import githubIcon from "../assets/icons8-github-100.png";
 
 const tecnologias = [
-  { nombre: "HTML5", img: "/images/icons8-html5-48.png" },
-  { nombre: "CSS3", img: "/images/icons8-css3-48.png" },
-  { nombre: "JavaScript", img: "/images/icons8-javascript-48.png" },
-  { nombre: "Bootstrap5", img: "/images/icons8-oreja-48.png" },
-  { nombre: "React/RNative", img: "/images/icons8-reaccionar-100.png" },
-  { nombre: "Python", img: "/images/icons8-python-48.png" },
+  { nombre: "HTML5", img: htmlIcon },
+  { nombre: "CSS3", img: css3Icon },
+  { nombre: "JavaScript", img: jsIcon },
+  { nombre: "Bootstrap5", img: bootstrapIcon },
+  { nombre: "React/RNative", img: reactIcon },
+  { nombre: "Python", img: pythonIcon },
   {
     nombre: "Django",
-    img: "/images/icons8-django-a-high-level-python-web-framework-that-encourages-rapid-development-24.png",
+    img: djangoIcon,
   },
-  { nombre: "MySQL", img: "/images/icons8-mysql-48.png" },
-  { nombre: "TypeScript", img: "/images/icons8-mecanografiado-48.png" },
-  { nombre: "Firebase", img: "/images/icons8-firebase-48.png" },
+  { nombre: "MySQL", img: mysqlIcon },
+  { nombre: "TypeScript", img: typescriptIcon },
+  { nombre: "Firebase", img: firebaseIcon },
 ];
 
 const herramientas = [
-  { nombre: "Git", img: "/images/icons8-git-48.png" },
-  { nombre: "Github", img: "/images/icons8-github-100.png" },
+  { nombre: "Git", img: gitIcon },
+  { nombre: "Github", img: githubIcon },
 ];
 
 const Tecnologias = () => {

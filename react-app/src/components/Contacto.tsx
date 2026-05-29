@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Contacto.css";
+import emailIcono from "../assets/email_icono.png";
+import emailImage from "../assets/email.png";
 
 const Contacto = () => {
   const email = "c.ricalde19@gmail.com";
@@ -22,9 +24,9 @@ const Contacto = () => {
 
       <footer className="pie">
         <div className="contact">
-          <img src="/images/email_icono.png" alt="" className="email-icono" />
+          <img src={emailIcono} alt="" className="email-icono" />
 
-          <img src="/images/email.png" alt={email} className="email" />
+          <img src={emailImage} alt={email} className="email" />
 
           <div className="boton-titulo">
             <button className="copy-email" onClick={copiarEmail}>
